@@ -1,0 +1,9 @@
+::: {.callout-tip title="👆"}
+Change the navigation bar by editing `_quarto.yml` 
+:::
+
+::: {.callout}
+👇 Replace this with your home page content by editing `index.qmd` 
+:::
+
+{{< include README.md >}}

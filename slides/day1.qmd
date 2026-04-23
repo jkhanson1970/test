@@ -1,0 +1,26 @@
+---
+title: "Day 1"
+subtitle: ""
+date: ""
+image: "https://umaec.umich.edu/wp-content/uploads/2013/10/030630_fordpreferred.jpg" # <-- image to be used in links to slides
+image-alt: Weill Hall # <- alt text for accessibility
+format:
+ revealjs: # see https://quarto.org/docs/presentations/revealjs/
+   incremental: false # <-- "true" = bullets and numbers to appear incrementally by default
+   scrollable: true
+   theme: [../michigan.scss, weill.scss] # <-- in addition to michigan style sheet, use "weill.scss" to apply a background to all slides 
+   title-slide-attributes:
+    data-background-opacity: "0.5" # <-- background opacity of title slide
+smaller: false # <-- text size toggle 
+footer: "👈 Click on Block M for menu | [Return to the website](index.qmd)"
+---
+
+## Tuesday: Introductions and Syllabus Review 
+
+> Please read <mark> the entire syllabus</mark> before class---this is your chance to ask questions about the assignments and readings.
+
+
+## Thursday
+
+- What are you hoping to get out of this semester?
+- What aspects of the discussion environment will help achieve these goals? 

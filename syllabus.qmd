@@ -1,0 +1,158 @@
+---
+title: Syllabus Template # add course title here 
+format:
+ html: default
+ pdf: default # delete this line if you don't want a pdf version rendered via LaTeX
+# docx: default # a DOCX version
+execute:
+  engine: knitr # enables inline R code
+  freeze: auto  # re-execute code only when this document changes
+---
+
+Time: 
+
+Instructor:
+
+- Office hours: 
+
+Skip to [reading by week](#reading-by-week)
+
+---
+
+🚧 Syllabus updated: [`r Sys.Date() |> format("%B %d %Y")`](https://github.com/judgelord/PP000/commits/main/docs/syllabus.html). This is [the current version](https://judgelord.github.io/PP000/syllabus.html). 🚧
+
+<!-- THIS IS AN HTML NOTE. IT WILL NOT BE PART OF THE DOCUMENT --> 
+
+<!--
+EVAL QUESTIONS 
+This course advanced my understanding of the subject matter. Q1631*
+My interest in the subject has increased because of this course. Q1632
+I knew what was expected of me in this course. Q1633
+I had a strong desire to take this course. Q4
+As compared with other courses of equal credit, the workload for this course was (Much Lighter, Lighter, Typical, Heavier, Much Heavier). Q891
+The instructor seemed well-prepared for class meetings. Q230
+The instructor explained the material clearly. Q199
+The instructor treated students with respect. Q217
+--> 
+	
+
+# 🗺️  Objectives
+
+This class aims to empower students to ...
+
+
+## ∴ Course Philosophy 
+
+In designing this course, I proceed from several premises: 
+
+1. Open source is better than proprietary 
+2. Sharing is good
+
+
+# 🏛️ Learning Environment
+
+Learning from each other is only possible if we show the respect due to our fellow citizens of this class.
+
+To realize this goal, I expect us to respect our colleagues and cultivate inclusive discussions. This means that we must be careful not to mislead, degrade, interrupt someone who does not speak as much, or enforce hierarchies based on race, religion, ethnicity, nationality, gender expression, sexual orientation, or ability.
+
+{{< include syllabus-insert.md >}}
+
+::: callout-important
+**If you require accommodations from SSD, please start that process quickly because it takes time.**
+:::
+
+
+## 📵 Technology in Class
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+## <i class="bi bi-tools"></i>️ Tools That Generate Text
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+##  🛠️ Tools That Generate Images
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+# 🪶 Assignments 
+
+Credit hours will be earned by attending two classes of $1.3\bar{3}$ hours each, reading and preparing written work outside of class for 6 to 9 hours per week, and a series of  assignments.
+
+## 📅 Due Dates 
+
+Below is the schedule of due dates. 
+
+- 
+
+## <i class="bi bi-clock"></i> Late Submissions
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+## 🗣 Participation
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+### ⎌ Make-up policy 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+#	 📚 Required Reading
+
+- @quarto
+
+## <i class="bi bi-bookshelf"></i> Additional Reading 
+
+- @pandoc
+- @mathjax
+
+# ℹ Resources 
+
+Accessibility
+
+- @mathjax_accessibility
+- @quarto_html_accessibility
+
+Formatting 
+
+- @quarto_html_themes
+
+Publishing
+
+- @quarto_github_pages
+- @posit_ide_version_control
+
+Slides 
+
+- @quarto_revealjs
+
+
+# 📖 Reading by Week
+
+> Each week's required readings are indented and marked with a grey sidebar. I also often note "resources" or "further readings" with bullets---these are not required readings.
+
+
+## Week 1: Orientation
+
+### Tuesday: Introductions and Syllabus Review 
+
+> Please read <mark> the entire syllabus</mark> before class --- this is your chance to ask questions about the assignments and readings.
+
+::: {.callout-note collapse="true" title="Further reading"}
+
+- [Assignment Guide](assignments)
+
+::: 
+
+
+### Thursday
+
+- What are you hoping to get out of this semester?
+- What aspects of the class environment will help achieve these goals? 
+
+
+
+# ※ References
+
+::: {#refs}
+:::
