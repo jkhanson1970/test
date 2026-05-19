@@ -3,8 +3,7 @@ title:"PubPol 779: Applied Econometrics" # add course title here
 format:
  html: default
 ---
-
-
+# PubPol 779: Applied Econometrics
 
 Instructor: Jonathan Hanson (he/him)\
 jkhanson\@umich.edu\
