@@ -1,90 +1,12 @@
-This is a [Quarto](https://quarto.org/docs/websites/) Template for Course Websites
+This is a Practice Course Site for Quarto Markdown
 
-- Contents: <https://github.com/judgelord/PP000>
-
-- Published website: <http://judgelord.github.io/PP000>
+- Published website: <http://jkhanson1970.github.io/test>
 
 ## Repository Contents 
 
-- `_quarto.yml` controls the structure of the website (e.g., [navigation](https://quarto.org/docs/reference/projects/websites.html) tabs)
 
-- `index.qmd` is home page content
+<!-- ![](figs/download_google_doc_as_markdown.png "Screenshot of downloading a Google doc as Markdown")---> 
 
-- `syllabus.qmd` is a template syllabus 
 
-- `syllabus-insert.qmd` is boilerplate* content to include in all syllabi (keeping it a separate file makes it easier to update when new guidance comes out)
+<!-- On <https://github.com/judgelord/PP000>, click [Use this template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template)---> 
 
-- `assignments.qmd` is a template assignment guide 
-
-- `/slides/` is a folder for slide decks
-
-   - `day1.qmd` is a template [Revealjs](https://quarto.org/docs/presentations/revealjs/) slide deck
-   
-   - `ford.scss` gives slides a Ford School logo background
-   
-   - `weill.scss` gives slides a Weill Hall background (see, e.g., day1 slides)
-   
-   - `index.qmd` automatically indexes slide decks in the slides folder on the slides tab of the website
-   
-- `accessibility.qmd` is a page of accessibility tips 
-   
-- `michigan.scss` styles all web pages, documents, and slides based on [font and color guidance from the University of Michigan](https://brand.umich.edu/design-resources/colors/) (optional; see [HTML Theming](https://quarto.org/docs/output-formats/html-themes.html) for other options)
-
-- `/code/` is a folder for code (optional)
-
-  - `copy syllabus template insert to other courses.R` is R code to copy files to other course folders
-
-- `/assets/` is a folder for other useful things
-
-  - `course.bib` is an example bib file (optional)
-
-  - `accessiblity-fixes.js` is JavaScript that fixes accessibly issues with web pages and HTML slides (see accessibly page)
-
-- `/docs/` is where files are rendered when Quarto builds the website --- ⚠️ DON'T EDIT IT MANUALLY ⚠️
-
-- `.gitignore` is a list of files to ignore (i.e., to not track or publish)
-
-*This particular boilerplate language is from the "Ford School Syllabus Template AY 2025-26.docx" Google Drive file downloaded as Markdown. 
-<!--from  Kathryn's 12-08-2025 email---> 
-
-![](figs/download_google_doc_as_markdown.png "Screenshot of downloading a Google doc as Markdown")
-
-# How to publish for free on GitHub
-
-## 1. Make a GitHub account
-
-## 2. On <https://github.com/judgelord/PP000>, click [Use this template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template)
-
-Name this new repository whatever you want the course website address to be (e.g., "PP475")
-
-![](https://docs.github.com/assets/cb-76823/mw-1440/images/help/repository/use-this-template-button.webp "A picture of the Use this template button")
-
-## 3. Download as a [version-controlled project](https://docs.posit.co/ide/user/ide/guide/tools/version-control.html)
-
-In RStudio:  "New Project"--> "Version Control"
-
-![](https://towardsdatascience.com/wp-content/uploads/2022/01/1PPhgC3GyhuLnWjNuUYIVrQ.png "A picture of new project options in Rstudio")
-
-## 4. Add your content to syllabus.qmd, assignments.qmd, and (optionally) the slides folder
-
-## 5. [Build/render your new website!](https://quarto.org/docs/websites/#website-preview)
-
-In RStudio:  "Build" --> "Render Project" (the button may say "Render Website" instead)
-
-![](https://quarto-tdg.org/images/projects-rstudio-build.png "A screenshot of the Render Project button in Rsudio")
-
-## 6. Commit any changes and push them to GitHub
-
-Note: For the website, you only need to push changes to the `/docs/` folder. Add other files only if you want to track changes. Don't push large files to GitHub. 
-
-## 
-
-In RStudio: select changes/files to commit on the "Git" tab. Then push the changes.
-
-![](https://bookdown.org/csgillespie/efficientR/figures/f9_1_rstudio-git.png "A screenshot of the Git tab in Rstudio")
-
-(If you don't already use GitHub, you will need to authorize/authenticate your computer to push changes to GitHub via [a personal access token](https://happygitwithr.com/https-pat))
-
-## 7. In GitHub Settings --> Pages, publish from the `/docs/` folder 
-
-![](https://quarto.org/docs/publishing/images/gh-pages-docs-dir.png "A picture of the option to publish GitHub pages from the docs folder")
