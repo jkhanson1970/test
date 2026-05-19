@@ -7,3 +7,4 @@ listing:
   sort: "date desc"
   date-format: medium
 ---
+- href "Dichotomous DVs_exp.qmd"
