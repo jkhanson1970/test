@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Syllabus Template – PubPol 000</title>
+<title>syllabus – PubPol 000</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,26 +23,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -92,35 +73,6 @@ div.csl-indent {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -146,16 +98,8 @@ window.Quarto = {
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./assignments.html"> 
-<span class="menu-text">Assignments</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./slides"> 
 <span class="menu-text">Slides</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./accessibility.html"> 
-<span class="menu-text">Accessibility</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -172,320 +116,335 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives">🗺️ Objectives</a>
-  <ul class="collapse">
-  <li><a href="#course-philosophy" id="toc-course-philosophy" class="nav-link" data-scroll-target="#course-philosophy">∴ Course Philosophy</a></li>
-  </ul></li>
-  <li><a href="#learning-environment" id="toc-learning-environment" class="nav-link" data-scroll-target="#learning-environment">🏛️ Learning Environment</a>
-  <ul class="collapse">
-  <li><a href="#technology-in-class" id="toc-technology-in-class" class="nav-link" data-scroll-target="#technology-in-class">📵 Technology in Class</a></li>
-  <li><a href="#tools-that-generate-text" id="toc-tools-that-generate-text" class="nav-link" data-scroll-target="#tools-that-generate-text"><i class="bi bi-tools"></i>️ Tools That Generate Text</a></li>
-  <li><a href="#tools-that-generate-images" id="toc-tools-that-generate-images" class="nav-link" data-scroll-target="#tools-that-generate-images">🛠️ Tools That Generate Images</a></li>
-  </ul></li>
-  <li><a href="#assignments" id="toc-assignments" class="nav-link" data-scroll-target="#assignments">🪶 Assignments</a>
-  <ul class="collapse">
-  <li><a href="#due-dates" id="toc-due-dates" class="nav-link" data-scroll-target="#due-dates">📅 Due Dates</a></li>
-  <li><a href="#late-submissions" id="toc-late-submissions" class="nav-link" data-scroll-target="#late-submissions"><i class="bi bi-clock"></i> Late Submissions</a></li>
-  <li><a href="#participation" id="toc-participation" class="nav-link" data-scroll-target="#participation">🗣 Participation</a>
-  <ul class="collapse">
-  <li><a href="#make-up-policy" id="toc-make-up-policy" class="nav-link" data-scroll-target="#make-up-policy">⎌ Make-up policy</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#required-reading" id="toc-required-reading" class="nav-link" data-scroll-target="#required-reading">📚 Required Reading</a>
-  <ul class="collapse">
-  <li><a href="#additional-reading" id="toc-additional-reading" class="nav-link" data-scroll-target="#additional-reading"><i class="bi bi-bookshelf"></i> Additional Reading</a></li>
-  </ul></li>
-  <li><a href="#ℹ-resources" id="toc-ℹ-resources" class="nav-link" data-scroll-target="#ℹ-resources">ℹ Resources</a></li>
-  <li><a href="#reading-by-week" id="toc-reading-by-week" class="nav-link" data-scroll-target="#reading-by-week">📖 Reading by Week</a>
-  <ul class="collapse">
-  <li><a href="#week-1-orientation" id="toc-week-1-orientation" class="nav-link" data-scroll-target="#week-1-orientation">Week 1: Orientation</a>
-  <ul class="collapse">
-  <li><a href="#tuesday-introductions-and-syllabus-review" id="toc-tuesday-introductions-and-syllabus-review" class="nav-link" data-scroll-target="#tuesday-introductions-and-syllabus-review">Tuesday: Introductions and Syllabus Review</a></li>
-  <li><a href="#thursday" id="toc-thursday" class="nav-link" data-scroll-target="#thursday">Thursday</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">※ References</a></li>
+  <li><a href="#class-meeting-schedule" id="toc-class-meeting-schedule" class="nav-link active" data-scroll-target="#class-meeting-schedule">Class Meeting Schedule</a></li>
+  <li><a href="#textbooks-there-is-no-single-textbook-for-this-course-and" id="toc-textbooks-there-is-no-single-textbook-for-this-course-and" class="nav-link" data-scroll-target="#textbooks-there-is-no-single-textbook-for-this-course-and">Textbooks There is no single textbook for this course, and</a></li>
+  <li><a href="#assignments-and-grading" id="toc-assignments-and-grading" class="nav-link" data-scroll-target="#assignments-and-grading">Assignments and Grading</a></li>
+  <li><a href="#august-25-principles-of-maximum-likelihood-estimation-in" id="toc-august-25-principles-of-maximum-likelihood-estimation-in" class="nav-link" data-scroll-target="#august-25-principles-of-maximum-likelihood-estimation-in">August 25: Principles of Maximum Likelihood Estimation In</a></li>
+  <li><a href="#august-27-september-3-dichotomous-dependent-variables" id="toc-august-27-september-3-dichotomous-dependent-variables" class="nav-link" data-scroll-target="#august-27-september-3-dichotomous-dependent-variables">August 27 &amp; September 3: Dichotomous Dependent Variables</a></li>
+  <li><a href="#september-9-ordinal-categories-as-dependent-variables" id="toc-september-9-ordinal-categories-as-dependent-variables" class="nav-link" data-scroll-target="#september-9-ordinal-categories-as-dependent-variables">September 9: Ordinal Categories as Dependent Variables</a></li>
+  <li><a href="#september-10-nominal-categories-as-dependent-variables" id="toc-september-10-nominal-categories-as-dependent-variables" class="nav-link" data-scroll-target="#september-10-nominal-categories-as-dependent-variables">September 10: Nominal Categories as Dependent Variables</a></li>
+  <li><a href="#september-15-17-count-models" id="toc-september-15-17-count-models" class="nav-link" data-scroll-target="#september-15-17-count-models">September 15 &amp; 17: Count Models</a></li>
+  <li><a href="#september-29-1-multivariate-matching-methods" id="toc-september-29-1-multivariate-matching-methods" class="nav-link" data-scroll-target="#september-29-1-multivariate-matching-methods">September 29 &amp; 1: Multivariate Matching Methods</a></li>
+  <li><a href="#october-6-8-regression-discontinuity-models" id="toc-october-6-8-regression-discontinuity-models" class="nav-link" data-scroll-target="#october-6-8-regression-discontinuity-models">October 6 &amp; 8: Regression Discontinuity Models</a></li>
+  <li><a href="#october-13-fall-study-break" id="toc-october-13-fall-study-break" class="nav-link" data-scroll-target="#october-13-fall-study-break">October 13: Fall Study Break</a></li>
+  <li><a href="#october-15-instrumental-variables-analysis-oftentimes" id="toc-october-15-instrumental-variables-analysis-oftentimes" class="nav-link" data-scroll-target="#october-15-instrumental-variables-analysis-oftentimes">October 15: Instrumental Variables Analysis Oftentimes,</a></li>
+  <li><a href="#october-20-22-regression-with-time-series-data-the" id="toc-october-20-22-regression-with-time-series-data-the" class="nav-link" data-scroll-target="#october-20-22-regression-with-time-series-data-the">October 20 &amp; 22: Regression with Time-Series Data The</a></li>
+  <li><a href="#october-27-multi-level-models" id="toc-october-27-multi-level-models" class="nav-link" data-scroll-target="#october-27-multi-level-models">October 27: Multi-Level Models</a></li>
+  <li><a href="#october-29-and-november-3-5-regression-with-panel-data-we" id="toc-october-29-and-november-3-5-regression-with-panel-data-we" class="nav-link" data-scroll-target="#october-29-and-november-3-5-regression-with-panel-data-we">October 29 and November 3 &amp; 5: Regression with Panel Data We</a></li>
+  <li><a href="#november-10-12-17-19-difference-in-differences-models" id="toc-november-10-12-17-19-difference-in-differences-models" class="nav-link" data-scroll-target="#november-10-12-17-19-difference-in-differences-models">November 10, 12, 17 &amp; 19: Difference-in-Differences Models</a></li>
+  <li><a href="#november-24-december-1-interrupted-time-series-with" id="toc-november-24-december-1-interrupted-time-series-with" class="nav-link" data-scroll-target="#november-24-december-1-interrupted-time-series-with">November 24 &amp; December 1: Interrupted Time Series With</a></li>
+  <li><a href="#december-3-8-synthetic-control-method" id="toc-december-3-8-synthetic-control-method" class="nav-link" data-scroll-target="#december-3-8-synthetic-control-method">December 3 &amp; 8: Synthetic Control Method</a></li>
+  <li><a href="#take-home-final-exam-due-by-monday-december-17" id="toc-take-home-final-exam-due-by-monday-december-17" class="nav-link" data-scroll-target="#take-home-final-exam-due-by-monday-december-17">Take-home Final Exam due by Monday, December 17</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="syllabus.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+</nav>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Syllabus Template</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>Time:</p>
-<p>Instructor:</p>
+<p>Instructor: Jonathan Hanson (he/him)<br>
+jkhanson@umich.edu<br>
+4223 Weill Hall, 734-615-1496<br>
+Office Hours: Mon. 3:00–4:30, Fri. 11:00–12:00, or by appointment<br>
+</p>
+<p>The objective of this course is to help gain students proficiency in advanced techniques that are employed in the service of causal inference, including selection models, regression discontinuity, difference-in-differences, matching methods, and interrupted time series. Students will understand how to design, execute, and interpret the results from estimation techniques beyond the standard OLS model. Students will learn to work with data structures in which the observations are not independently and identically distributed: time-series data, panel data, time-series-cross-sectional data, multi-level data, etc.</p>
+<p>Prerequisite: it is assumed that students in this course will have previously taken Public Policy 529 and Public Policy 639, or equivalent coursework. Students are advised to consult with the instructor if they received a grade lower than A- in either of these courses.</p>
+<section id="class-meeting-schedule" class="level2">
+<h2 class="anchored" data-anchor-id="class-meeting-schedule">Class Meeting Schedule</h2>
+<p>Unless otherwise noted, lectures are Mondays and Wednesdays from 10:00–11:20 pm in 1210 Weill Hall.</p>
+</section>
+<section id="textbooks-there-is-no-single-textbook-for-this-course-and" class="level2">
+<h2 class="anchored" data-anchor-id="textbooks-there-is-no-single-textbook-for-this-course-and">Textbooks There is no single textbook for this course, and</h2>
+<p>readings will be available on the Canvas website. You can log into Canvas at <a href="http://canvas.umich.edu" class="uri">http://canvas.umich.edu</a>. The following books and articles, however, will be good references for course material. The Cunningham and Huntington-Klein texts are available in an online format.</p>
 <ul>
-<li>Office hours:</li>
-</ul>
-<p>Skip to <a href="#reading-by-week">reading by week</a></p>
-<hr>
-<p>🚧 Syllabus updated: <a href="https://github.com/judgelord/PP000/commits/main/docs/syllabus.html">May 18 2026</a>. This is <a href="https://judgelord.github.io/PP000/syllabus.html">the current version</a>. 🚧</p>
-<!-- THIS IS AN HTML NOTE. IT WILL NOT BE PART OF THE DOCUMENT -->
-<!--
-EVAL QUESTIONS 
-This course advanced my understanding of the subject matter. Q1631*
-My interest in the subject has increased because of this course. Q1632
-I knew what was expected of me in this course. Q1633
-I had a strong desire to take this course. Q4
-As compared with other courses of equal credit, the workload for this course was (Much Lighter, Lighter, Typical, Heavier, Much Heavier). Q891
-The instructor seemed well-prepared for class meetings. Q230
-The instructor explained the material clearly. Q199
-The instructor treated students with respect. Q217
--->
-<section id="objectives" class="level1">
-<h1>🗺️ Objectives</h1>
-<p>This class aims to empower students to …</p>
-<section id="course-philosophy" class="level2">
-<h2 class="anchored" data-anchor-id="course-philosophy">∴ Course Philosophy</h2>
-<p>In designing this course, I proceed from several premises:</p>
-<ol type="1">
-<li>Open source is better than proprietary</li>
-<li>Sharing is good</li>
-</ol>
-</section>
-</section>
-<section id="learning-environment" class="level1">
-<h1>🏛️ Learning Environment</h1>
-<p>Learning from each other is only possible if we show the respect due to our fellow citizens of this class.</p>
-<p>To realize this goal, I expect us to respect our colleagues and cultivate inclusive discussions. This means that we must be careful not to mislead, degrade, interrupt someone who does not speak as much, or enforce hierarchies based on race, religion, ethnicity, nationality, gender expression, sexual orientation, or ability.</p>
-<p><strong>Ford School Inclusivity Statement:</strong> Members of the Ford School community represent a rich variety of backgrounds and perspectives. We are committed to providing an atmosphere for learning that respects these differences. While working together to build this community we ask all members to:</p>
-<ul>
-<li>share their unique experiences, values and beliefs<br>
-</li>
-<li>be open to the views of others<br>
-</li>
-<li>honor the uniqueness of their colleagues<br>
-</li>
-<li>appreciate the opportunity that we have to learn from each other in this community<br>
-</li>
-<li>value one another’s opinions and communicate in a respectful manner<br>
-</li>
-<li>keep confidential discussions that the community has of a personal (or professional) nature<br>
-</li>
-<li>use this opportunity together to discuss ways in which we can create an inclusive environment in Ford classes and across the UM community</li>
-</ul>
-<p><strong>Student Mental Health and Wellbeing:</strong> The University of Michigan is committed to advancing the mental health and wellbeing of its students. We acknowledge that a variety of issues can directly impact students’ academic performance and overall wellbeing. If you or someone you know is feeling overwhelmed, depressed, and/or in need of support, services are available.</p>
-<p>You may access the Ford School’s embedded counselor Paige Ziegler (pziegler@umich.edu) and/or counselors and urgent services at <a href="https://caps.umich.edu/">Counseling and Psychological Services</a> (CAPS) and/or <a href="https://uhs.umich.edu/">University Health Service</a> (UHS). Students may also use the Crisis Text Line (text ‘4UMICH’ to 741741) to be connected to a trained crisis volunteer.</p>
-<p><strong>Accommodations for Students with Disabilities:</strong> The University of Michigan is committed to creating as accessible educational environment for students with disabilities as possible.<br>
-If you anticipate or are experiencing barriers based on disability or temporary injuries, Services for Students with Disabilities (SSD) (<a href="http://ssd.umich.edu">ssd.umich.edu</a>) is the office that students work with to explore reasonable accommodations, tools, and resources.</p>
-<ul>
-<li>If <strong>you are already connected</strong> with SSD and have approved accommodations, please share your <a href="https://ssd.umich.edu/article/submitting-semester-requests">letter through Accommodate</a> as soon as possible so that we can discuss how your accommodations will be implemented in this course. The sooner I know about your disability access-needs, the more equipped I can be to facilitate accommodations. You should reach out to me and/or your Disability Access Coordinator if you have any questions or concerns about your accommodations.<br>
-</li>
-<li>If <strong>you have not connected</strong> with SSD and anticipate or are experiencing a disability-related barrier, and would like to discuss accommodations and/or resources, please contact SSD by completing their initial information form (<a href="https://ssd.umich.edu/">https://ssd.umich.edu/</a>)<br>
-</li>
-<li>If you have a <strong>temporary medical injury/condition</strong>, such as a broken arm, I may be able to assist in minimizing classroom barriers. In situations where additional assistance is needed, you should contact the SSD as noted above.</li>
-</ul>
-<p><strong>Academic Integrity:</strong> The Ford School academic community, like all communities, functions best when its members treat one another with honesty, fairness, respect, and trust. We hold all members of our community to high standards of scholarship and integrity. To accomplish its mission of providing an optimal educational environment and developing leaders of society, the Ford School promotes the assumption of personal responsibility and integrity and prohibits all forms of academic dishonesty, plagiarism and misconduct. Academic dishonesty may be understood as any action or attempted action that may result in creating an unfair academic advantage for oneself or an unfair academic advantage or disadvantage for any other member or members of the academic community. Plagiarism involves representing the words, ideas, or work of others as one’s own in writing or presentations, and failing to give full and proper credit to the original source. Conduct, without regard to motive, that violates the academic integrity and ethical standards will result in serious consequences and disciplinary action. The Ford School’s policy of academic integrity can be found in the BA, MPP, and PhD Program handbooks. Additional information regarding academic dishonesty, plagiarism and misconduct and their consequences is available on the <a href="https://rackham.umich.edu/academic-policies/section8/#112">Rackham website</a>.</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>If you require accommodations from SSD, please start that process quickly because it takes time.</strong></p>
-</div>
-</div>
-<section id="technology-in-class" class="level2">
-<h2 class="anchored" data-anchor-id="technology-in-class">📵 Technology in Class</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</section>
-<section id="tools-that-generate-text" class="level2">
-<h2 class="anchored" data-anchor-id="tools-that-generate-text"><i class="bi bi-tools"></i>️ Tools That Generate Text</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</section>
-<section id="tools-that-generate-images" class="level2">
-<h2 class="anchored" data-anchor-id="tools-that-generate-images">🛠️ Tools That Generate Images</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</section>
-</section>
-<section id="assignments" class="level1">
-<h1>🪶 Assignments</h1>
-<p>Credit hours will be earned by attending two classes of <span class="math inline">\(1.3\bar{3}\)</span> hours each, reading and preparing written work outside of class for 6 to 9 hours per week, and a series of assignments.</p>
-<section id="due-dates" class="level2">
-<h2 class="anchored" data-anchor-id="due-dates">📅 Due Dates</h2>
-<p>Below is the schedule of due dates.</p>
-<ul>
-<li></li>
+<li><p>Alberto Abadie and Matias D. Cattaneo. 2018. “Econometric Methods for Program Evaluation.” <em>Annual Review of Economics</em> 10: 465–503. <a href="https://economics.mit.edu/sites/default/files/publications/ARE-typo-Fig4-corrected.pdf">Link</a>.</p></li>
+<li><p>Joshua D. Angrist and Jörn-Steffen Pischke. 2015. <em>Mastering ’Metrics: The Path from Cause to Effect</em>. Princeton: Princeton University Press.</p></li>
+<li><p>Scott Cunningham. 2021. <em>Causal Inference: The Mixtape</em>. New Haven: Yale University Press. <a href="https://mixtape.scunning.com">Link</a>.</p></li>
+<li><p>Paul J. Gertier, Sebastian Martinez, Patrick Premand, Laura B. Rawlings, and Christel M. J. Vermeersch. 2016. <em>Impact Evaluation in Practice</em>, 2nd ed.&nbsp;Washington, DC: World Bank. <a href="https://search.lib.umich.edu/catalog/record/99187424055806381">Link</a>.</p></li>
+<li><p>Nick Huntington-Klein. 2021. <em>The Effect: An Introduction to Research Design and Causality.</em> Chapman &amp; Hall. <a href="https://www.theeffectbook.net/index.html">Link</a>.</p></li>
+<li><p>J. Scott Long. 1997. <em>Regression Models for Categorical and Limited Dependent Variables</em>. Sage Publications.</p></li>
 </ul>
 </section>
-<section id="late-submissions" class="level2">
-<h2 class="anchored" data-anchor-id="late-submissions"><i class="bi bi-clock"></i> Late Submissions</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<section id="assignments-and-grading" class="level2">
+<h2 class="anchored" data-anchor-id="assignments-and-grading">Assignments and Grading</h2>
+<p>Your grade for this course will be determined by the following:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Course Component</th>
+<th style="text-align: center;">% of grade</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Problem sets</td>
+<td style="text-align: center;">50%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Midterm exam</td>
+<td style="text-align: center;">25%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Final exam</td>
+<td style="text-align: center;">25%</td>
+</tr>
+</tbody>
+</table>
+<p>There will be six major problem sets in this course. Additionally, there will be two exams – one midterm and one final – covering the first-half and second halves of the course respectively. These will be take-home exams, and you will have approximately one week to work on them.</p>
+<p>You are encouraged to help each other figure out the answers to the problem sets, but it is expected that you write up your answers independently. The take-home exams are exams. For these exams, you are not permitted to communicate with any person other than the course instructor. Receiving help from any other person, or providing help to any other person, is a violation of academic integrity and will result in significant consequences. Use of generative AI tools to answer exam questions is also an academic integrity violation. You may, however, consult any textbook or static internet-resources.</p>
+<div class="center">
+<div class="{##default}">
+<table class="caption-top table">
+<caption>Assignment and Exam Calendar</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Assignment</th>
+<th style="text-align: left;">Due Date</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Problem Set 1</td>
+<td style="text-align: left;">September 15</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Problem Set 2</td>
+<td style="text-align: left;">September 24</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Problem Set 3</td>
+<td style="text-align: left;">October 6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Take-home Midterm Exam</td>
+<td style="text-align: left;">October 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Problem Set 4</td>
+<td style="text-align: left;">November 3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Problem Set 5</td>
+<td style="text-align: left;">November 17</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Problem Set 6</td>
+<td style="text-align: left;">December 8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Final Exam (take-home portion)</td>
+<td style="text-align: left;">December 17</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="center">
+<p><strong>Advanced Estimation Methods for Cross-Sectional Data</strong></p>
+</div>
 </section>
-<section id="participation" class="level2">
-<h2 class="anchored" data-anchor-id="participation">🗣 Participation</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-<section id="make-up-policy" class="level3">
-<h3 class="anchored" data-anchor-id="make-up-policy">⎌ Make-up policy</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</section>
-</section>
-</section>
-<section id="required-reading" class="level1">
-<h1>📚 Required Reading</h1>
+<section id="august-25-principles-of-maximum-likelihood-estimation-in" class="level2">
+<h2 class="anchored" data-anchor-id="august-25-principles-of-maximum-likelihood-estimation-in">August 25: Principles of Maximum Likelihood Estimation In</h2>
+<p>the classical linear regression model and its variants, we find the parameters of interest (i.e.&nbsp;the regression coefficients) though analytic formulas. With Maximum Likelihood Estimation (MLE), these parameters are often found by a search algorithm which tours the parameter space and finds the values of the parameters that are “most likely” given the data. The power of MLE its flexibility. Many different functional forms are possible, facilitating analysis of many kinds of data for which linear regression is not suitable.</p>
 <ul>
-<li><span class="citation" data-cites="quarto">Quarto (<a href="#ref-quarto" role="doc-biblioref">2026e</a>)</span></li>
-</ul>
-<section id="additional-reading" class="level2">
-<h2 class="anchored" data-anchor-id="additional-reading"><i class="bi bi-bookshelf"></i> Additional Reading</h2>
-<ul>
-<li><span class="citation" data-cites="pandoc">Pandoc (<a href="#ref-pandoc" role="doc-biblioref">2026</a>)</span></li>
-<li><span class="citation" data-cites="mathjax">MathJax (<a href="#ref-mathjax" role="doc-biblioref">2026b</a>)</span></li>
+<li><p>M S Sasidhar. 2018. “Introduction to Maximum Likelihood Estimation.” <a href="https://tinyurl.com/y2hb45vv" class="uri">https://tinyurl.com/y2hb45vv</a></p></li>
+<li><p>Sherry Towers. “Maximum Likelihood Estimation.” <a href="http://www.sherrytowers.com/mle_introduction.pdf" class="uri">http://www.sherrytowers.com/mle_introduction.pdf</a>.</p></li>
+<li><p>Online simulation by Shawna Metzger: <a href="https://mybinder.org/v2/gh/MetzgerSK/shinyElement/major?urlpath=shiny/mleLogit/" class="uri">https://mybinder.org/v2/gh/MetzgerSK/shinyElement/major?urlpath=shiny/mleLogit/</a>.</p></li>
 </ul>
 </section>
-</section>
-<section id="ℹ-resources" class="level1">
-<h1>ℹ Resources</h1>
-<p>Accessibility</p>
+<section id="august-27-september-3-dichotomous-dependent-variables" class="level2">
+<h2 class="anchored" data-anchor-id="august-27-september-3-dichotomous-dependent-variables">August 27 &amp; September 3: Dichotomous Dependent Variables</h2>
+<p>When our dependent variables are dichotomous, OLS might be problematic. For one thing, OLS can in some cases produce predicted values of the dependent variable that fall outside the range the 0-1 range. Other problems arise with non-normality of disturbances and non-linear effects of independent variables. With Maximum Likelihood Estimation, we can use functional forms that are designed for these data:&nbsp;probit and logit models.</p>
 <ul>
-<li><span class="citation" data-cites="mathjax_accessibility">MathJax (<a href="#ref-mathjax_accessibility" role="doc-biblioref">2026a</a>)</span></li>
-<li><span class="citation" data-cites="quarto_html_accessibility">Quarto (<a href="#ref-quarto_html_accessibility" role="doc-biblioref">2026b</a>)</span></li>
-</ul>
-<p>Formatting</p>
-<ul>
-<li><span class="citation" data-cites="quarto_html_themes">Quarto (<a href="#ref-quarto_html_themes" role="doc-biblioref">2026c</a>)</span></li>
-</ul>
-<p>Publishing</p>
-<ul>
-<li><span class="citation" data-cites="quarto_github_pages">Quarto (<a href="#ref-quarto_github_pages" role="doc-biblioref">2026a</a>)</span></li>
-<li><span class="citation" data-cites="posit_ide_version_control">Posit (<a href="#ref-posit_ide_version_control" role="doc-biblioref">2026</a>)</span></li>
-</ul>
-<p>Slides</p>
-<ul>
-<li><span class="citation" data-cites="quarto_revealjs">Quarto (<a href="#ref-quarto_revealjs" role="doc-biblioref">2026d</a>)</span></li>
+<li><p>J.&nbsp;Scott Long. 1997. “Binary Outcomes: The Linear Probability, Probit, and Logit Models” In <em>Regression Models for Categorical and Limited Dependent Variables</em>, chapter 3.</p></li>
+<li><p>Robin Gomila. 2020. “Logistic or Linear? Estimating Causal Effects of Experimental Treatments on Binary Outcomes Using Regression Analysis.” <em>Journal of Experimental Psychology: General</em> 150(4): 700–709.</p></li>
+<li><p>Sheheryar Banuri, Stefan Dercon, and Varun Gauri. 2019. “Biased Policy Professionals.” <em>The World Bank Economic Review</em> 33(2): 310–327.</p></li>
+<li><p>Edward C.&nbsp;Norton, Bryan E.&nbsp;Dowd, Melissa M.&nbsp;Garrido, and Matthew L.&nbsp;Maciejewski. 2024. “Commentary: Requiem for odds ratios.” <em>Health Services Research</em> 59:e14337.</p></li>
+<li><p>Kai Arzheimer. May 13, 2025. “ME at the Margins: Average Marginal Effects, Marginal Effects at the Mean, and Stata’s margins command.” <a href="https://www.kai-arzheimer.com/me-at-the-margins-average-marginal-effects-marginal-effects-at-the-mean-and-statas-margins-command/">Blog posting</a>.</p></li>
 </ul>
 </section>
-<section id="reading-by-week" class="level1">
-<h1>📖 Reading by Week</h1>
-<blockquote class="blockquote">
-<p>Each week’s required readings are indented and marked with a grey sidebar. I also often note “resources” or “further readings” with bullets—these are not required readings.</p>
-</blockquote>
-<section id="week-1-orientation" class="level2">
-<h2 class="anchored" data-anchor-id="week-1-orientation">Week 1: Orientation</h2>
-<section id="tuesday-introductions-and-syllabus-review" class="level3">
-<h3 class="anchored" data-anchor-id="tuesday-introductions-and-syllabus-review">Tuesday: Introductions and Syllabus Review</h3>
-<blockquote class="blockquote">
-<p>Please read <mark> the entire syllabus</mark> before class — this is your chance to ask questions about the assignments and readings.</p>
-</blockquote>
-<div class="callout callout-style-default callout-note callout-titled" title="Further reading">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Further reading
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
+<section id="september-9-ordinal-categories-as-dependent-variables" class="level2">
+<h2 class="anchored" data-anchor-id="september-9-ordinal-categories-as-dependent-variables">September 9: Ordinal Categories as Dependent Variables</h2>
+<p>When the dependent variable consists of ordinal categories, the list of possible problems grows. We can use ordered probit and ordered logit models for this kind data. A key objective is to learn how to interpret and convey the results.</p>
 <ul>
-<li><a href="assignments">Assignment Guide</a></li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section id="thursday" class="level3">
-<h3 class="anchored" data-anchor-id="thursday">Thursday</h3>
-<ul>
-<li>What are you hoping to get out of this semester?</li>
-<li>What aspects of the class environment will help achieve these goals?</li>
+<li><p>J.&nbsp;Scott Long. 1997. “Ordinal Outcomes: Ordered Logit and Ordered Probit Analysis.” In <em>Regression Models for Categorical and Limited Dependent Variables</em>, chapter 5.</p></li>
+<li><p>Zijing Lin and Wei “David” Fan. 2020. “Bicycle Ridership Using Crowdsourced Data: Ordered Probit Model Approach.” <em>Journal of Transportation Engineering, Part A: Systems</em> 146(8): 1–15.</p></li>
 </ul>
 </section>
+<section id="september-10-nominal-categories-as-dependent-variables" class="level2">
+<h2 class="anchored" data-anchor-id="september-10-nominal-categories-as-dependent-variables">September 10: Nominal Categories as Dependent Variables</h2>
+<p>With unordered categories, estimation becomes trickier since we cannot use a latent dimension as an underlying framework. We can use multinomial logit models in these circumstances.</p>
+<ul>
+<li><p>J.&nbsp;Scott Long. 1997. “Nominal Outcomes: Multinomial Logit and Related Models.” In <em>Regression Models for Categorical and Limited Dependent Variables</em>, chapter 6.</p></li>
+<li><p>M. Niaz Asadullah. 2018. “Madrasah for Girls and Private School for Boys? The Determinants of School Type Choice in Rural and Urban Indonesia.” <em>International Journal of Educational Development</em> 62: 96–111.</p></li>
+</ul>
 </section>
+<section id="september-15-17-count-models" class="level2">
+<h2 class="anchored" data-anchor-id="september-15-17-count-models">September 15 &amp; 17: Count Models</h2>
+<p>Count models are for cases in which the dependent variable is a count of the number of times something occurs.</p>
+<ul>
+<li><p>Will Koehrsen. 2019. “The Poisson Distribution and Poisson Process Explained.” <a href="https://builtin.com/data-science/poisson-process#">Blog posting</a>. Updated by Brennan Whitfield, July 28, 2023.</p></li>
+<li><p>Stefany Coxe, Stephen G. West, and Leona S. Aiken. 2009. “The Analysis of Count Data: A Gentle Introduction to Poisson Regression and Its Alternatives.” <em>Journal of Personality Assessment</em> 91(2): 121–136.</p></li>
+<li><p>Rainer Winkelmann (2015). “Counting on Count Data Models.” IZA World of Labor 2015: 148.</p></li>
+<li><p>Paul Kwame Nkegbe and Naasengnibe Kuunibe. 2019. “Poverty and Malaria Morbidity: A Study Using Count Regression Model.” SAGE Research Methods Cases in Business and Management.</p></li>
+</ul>
+<div class="samepage">
+<div class="center">
+<p><strong>Causal Inference for Cross-Sectional Data</strong></p>
+</div>
+<section id="september-22-24-sample-selection-and-related-models" class="level2">
+<h2 class="anchored" data-anchor-id="september-22-24-sample-selection-and-related-models">September 22 &amp; 24: Sample Selection and Related Models</h2>
+<p>The purpose of selection models is to address situations in which the cases that make it into the sample are different in important, unmeasured ways from those who do not, and these unmeasured factors are relevant for predicting the dependent variable. In other situations, assignment into the treatment condition is non-random and correlated with relevant, unmeasured factors.</p>
 </section>
-<section id="references" class="level1">
-<h1>※ References</h1>
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-mathjax_accessibility" class="csl-entry" role="listitem">
-MathJax. 2026a. <em>Accessibility</em>. <a href="https://docs.mathjax.org/en/latest/basic/accessibility.html" class="uri">Https://docs.mathjax.org/en/latest/basic/accessibility.html</a>.
 </div>
-<div id="ref-mathjax" class="csl-entry" role="listitem">
-MathJax. 2026b. <em>MathJax</em>. <a href="https://docs.mathjax.org/" class="uri">Https://docs.mathjax.org/</a>.
+<ul>
+<li><p>Shenyang Guo and Mark W. Fraser. 2014. <em>Propensity Score Analysis</em>, chapter 4. Sage Publications, Inc.&nbsp;Note: the Stata “treatreg” command described here is called “etregress” in newer versions of Stata.</p></li>
+<li><p>Claire Infante-Rivard and Alexandre Cusson. 2018. “Reflection on Modern Methods: Selection Bias – A Review of Recent Developments.” <em>International Journal of Epidemiology</em> 47(5): 1714–1722.</p></li>
+<li><p>Shawn Bushway, Brian D. Johnson, and Lee Ann Slocum. 2007. “Is the Magic Still There? The Use of the Heckman Two-Step Correction for Selection Bias in Criminology.” <em>Journal of Quantitative Criminology</em> 23: 151–178.</p></li>
+<li><p>Manh Hung Do and Sang Chul Park. 2019. “Impacts of Vietnam’s New Rural Development Policy on Rural Households’ Income: Empirical Evidence from the Heckman Selection Model.” <em>International Review of Public Administration</em> 24(4): 229–245.</p></li>
+<li><p>Marijana Andrijić and Tajana Barbić. 2018. “Trick or Treat? The Effect of IMF Programmes on Mobilising FDI in CESEE Countries.” <em>Czech Journal of Economics and Finance</em> 68(3): 245–266.</p></li>
+</ul>
+</section>
+<section id="september-29-1-multivariate-matching-methods" class="level2">
+<h2 class="anchored" data-anchor-id="september-29-1-multivariate-matching-methods">September 29 &amp; 1: Multivariate Matching Methods</h2>
+<p>With observational data, we face inherent challenges in estimating the average treatment effect (ATE) of some policy intervention because the treatment is not randomly-assigned. The treatment group and control group may differ from each other, in the aggregate, on both observable and unobservable characteristics in ways other than the treatment, and we cannot adequately control for these other factors. Matching methods are intended to bring balance to the treatment groups on these other characteristics to reduce bias in estimating the ATE. In this section of the course we will learn various matching methods and develop awareness of their limitations.</p>
+<ul>
+<li><p>Scott Cunningham. 2021. “Matching and Subclassification.” In <em>Causal Inference: The Mixtape</em>, chapter 5. Yale University Press. <a href="https://mixtape.scunning.com/05-matching_and_subclassification">Link to online version</a>.</p></li>
+<li><p>C. Lockwood Reynolds and Stephen DesJardins. 2009. “The Use of Matching Methods in Higher Education Research.” In <em>Higher Education: Handbook of Theory and Research</em>, ed.&nbsp;John C. Smart. Springer.</p></li>
+<li><p>Elizabeth Stuart. 2010. “Matching Methods for Causal Inference: A Review and a Look Forward.” <em>Statistical Science</em> 25(1): 1–21.</p></li>
+<li><p>Jonathan Bartlett. 2016. “Why You Shouldn’t Use Propensity Score Matching.” <a href="https://thestatsgeek.com/2016/09/07/why-you-shouldnt-use-propensity-score-matching/">The Stats Geek blog</a>.</p></li>
+<li><p>Alexander Pfaff, Juan Robalino, Eirivelthon Lima, Catalina Sandoval, and Luis Diego Herrera. 2014. “Governance, Location, and Avoided Deforestation from Protected Areas: Greater Restrictions Can Have Lower Impact, Due to Differences in Location.” <em>World Development</em> 55: 7–20.</p></li>
+</ul>
+</section>
+<section id="october-6-8-regression-discontinuity-models" class="level2">
+<h2 class="anchored" data-anchor-id="october-6-8-regression-discontinuity-models">October 6 &amp; 8: Regression Discontinuity Models</h2>
+<p>Regression discontinuity models are useful for scenarios in which assignment into the treatment group is based upon a cutoff score on some observable characteristic or a particular date of implementation. In short, the difference between the predicted outcomes on either side of the cutoff point becomes a way to estimate the size of the treatment effect. This section of the course explores various uses of these models.</p>
+<ul>
+<li><p>Nick Huntington-Klein. 2022. “Regression Discontinuity.” In <em>The Effect: An Introduction to Research Design and Causality</em>, chapter 20. Routledge. <a href="https://www.theeffectbook.net/ch-RegressionDiscontinuity.html">Link to online version</a>.</p></li>
+<li><p>Matias D. Cattaneo, Rocı́o Titiunik, and Gonzalo Vazquez-Bare. 2020. “The Regression Discontinuity Design.” <em>Handbook of Research Methods in Political Science and International Relations</em>, chapter 44. Sage Publications.</p></li>
+<li><p>Pei Zhu. 2019. “Using a Regression Discontinuity Design for Evaluation Studies.” MDRC.</p></li>
+<li><p>David S. Lee. 2008. “Randomized Experiments from Non-Random Selection in U.S. House Elections.” <em>Journal of Econometrics</em> 142: 675–697.</p></li>
+<li><p>Analisa Packham and Brittany Street. 2018. “The Effects of Physical Education on Student Fitness, Achievement, and Behavior.” Manuscript.</p></li>
+</ul>
+</section>
+<section id="october-13-fall-study-break" class="level2">
+<h2 class="anchored" data-anchor-id="october-13-fall-study-break">October 13: Fall Study Break</h2>
+</section>
+<section id="october-15-instrumental-variables-analysis-oftentimes" class="level2">
+<h2 class="anchored" data-anchor-id="october-15-instrumental-variables-analysis-oftentimes">October 15: Instrumental Variables Analysis Oftentimes,</h2>
+<p>there is strong reason to believe that the relationship between our dependent variable, and one or more of our independent variables, is endogenous. In such cases, our estimate of the coefficient on the independent variable will be biased. If we can find a third variable, however, which only has an effect on the dependent variable through the endogenous independent variable, we can identify the correct relationship.</p>
+<ul>
+<li><p>Nick Huntington-Klein. 2022. “Instrumental Variables.” In <em>The Effect: An Introduction to Research Design and Causality</em>, chapter 19. Routledge. <a href="https://theeffectbook.net/ch-InstrumentalVariables.html">Link to online version</a>.</p></li>
+<li><p>Allison J. Sovey and Donald P. Green. 2011. “Instrumental Variables Estimation in Political Science: A Readers’ Guide.” <em>American Journal of Political Science</em> 55(1): 188–200.</p></li>
+<li><p>Paul J. Gertler, Sebastian Martinez, Patrick Premand, Laura B. Rawlings, and Christel M. J. Vermeersch. 2016. “Instrumental Variables: Evaluating Programs When Not Everyone Complies with Their Assignment.” In <em>Impact Evaluation in Practice</em>, 2nd edition. World Bank Publications.</p></li>
+<li><p>Blog Post. 2015. “Friends Don’t Let Friends Do IV.” <a href="https://tinyurl.com/y5ee3j86" class="uri">https://tinyurl.com/y5ee3j86</a>.</p></li>
+</ul>
+<div class="center">
+<p><strong>Estimation Methods for Time-Series and Panel Data</strong></p>
 </div>
-<div id="ref-pandoc" class="csl-entry" role="listitem">
-Pandoc. 2026. <em>Pandoc</em>. <a href="https://pandoc.org/" class="uri">Https://pandoc.org/</a>.
+</section>
+<section id="october-20-22-regression-with-time-series-data-the" class="level2">
+<h2 class="anchored" data-anchor-id="october-20-22-regression-with-time-series-data-the">October 20 &amp; 22: Regression with Time-Series Data The</h2>
+<p>standard assumption is that our data are independent and identically distributed. When we have time-series data, such as the results of monthly polls on presidential approval or some other case of repeated observations of the same object, this assumption is violated. The stochastic component of one observation may be correlated with the one preceding it and the one that follows. We spend about two sessions on this topic.</p>
+<ul>
+<li><p>Aptech Data Analytics Blog. 2020. “Introduction to the Fundamentals of Time Series Data and Analysis.” <a href="https://tinyurl.com/vzud6yj" class="uri">https://tinyurl.com/vzud6yj</a>.</p></li>
+<li><p>Jon C.&nbsp;Pevehouse and Jason D.&nbsp;Brozek. 2008. “Time-Series Analysis.” In <em>The Oxford Handbook of Political Methodology</em>, chapter 19.</p></li>
+<li><p>Janet M. Box-Steffensmeier, John R. Freeman, Matthew P. Hitt, and Jon C. W. Pevehouse. 2014. “Dynamic Regression Models.” In <em>Time Series Analysis for the Social Sciences</em>, chap.&nbsp;3. Cambridge University Press.</p></li>
+<li><p>Andrew Q. Phillips. 2021. “How to avoid incorrect inferences (while gaining correct ones) in dynamic models.” <em>Political Science Research and Methods</em>, First View, 1–11. DOI: <a href="https://doi.org/10.1017/psrm.2021.31" class="uri">https://doi.org/10.1017/psrm.2021.31</a>.</p></li>
+</ul>
+</section>
+<section id="october-27-multi-level-models" class="level2">
+<h2 class="anchored" data-anchor-id="october-27-multi-level-models">October 27: Multi-Level Models</h2>
+<p>When our data consist of individual cases that are embedded within higher-level units – such as school children inside classrooms, which are inside schools – we need methods that can estimate both individual and unit-level effects. In this section of the course, we explore the use of multi-level models for this purpose.</p>
+<ul>
+<li><p>Ana V. Diez-Roux. 2000. “Multilevel Analysis in Public Health Research.” <em>Annual Review of Public Health</em> 21: 171–192.</p></li>
+<li><p>Michael Freeman. “An Introduction to Hierarchical Modeling.” Visualization available at <a href="http://mfviz.com/hierarchical-models/" class="uri">http://mfviz.com/hierarchical-models/</a>.</p></li>
+<li><p>Use chapter from Multilevel Modeling in Plain Language book from bookshelf.</p></li>
+<li><p>Tim Smith and Gerald Shively. 2019. “Multilevel analysis of individual, household, and community factors influencing child growth in Nepal.” <em>BMC Pediatrics</em> 19(91): 1–14.</p></li>
+</ul>
+</section>
+<section id="october-29-and-november-3-5-regression-with-panel-data-we" class="level2">
+<h2 class="anchored" data-anchor-id="october-29-and-november-3-5-regression-with-panel-data-we">October 29 and November 3 &amp; 5: Regression with Panel Data We</h2>
+<p>have a panel when our data contain repeated observations of a sample of objects, such as a set of individuals who are surveyed periodically or a time series of cross-national data. In this scenario, we need to think about the non-independence of our observations both across time and space.</p>
+<ul>
+<li><p>Aptech Data Analytics Blog. 2020. “Introduction to the Fundamentals of Panel Data.” <a href="https://tinyurl.com/y4gt52db" class="uri">https://tinyurl.com/y4gt52db</a>. (short intro)</p></li>
+<li><p>Tae Ho Eom, Sock Hwan Lee, and Hua Xu. 2007. “Introduction to Panel Data Analysis. Concepts and Practices.” In <em>Handbook of Research Methods in Public Administration</em>, Gerald R. Miller and Kaifeng Yang, eds.&nbsp;CRC Press.</p></li>
+<li><p>Robert Kubinec. 2020. “What Panel Data is Really All About.” <a href="http://www.robertkubinec.com/post/fixed_effects/" class="uri">http://www.robertkubinec.com/post/fixed_effects/</a>.</p></li>
+<li><p>Matthias Collischon and Andreas Eberl. 2020. “Let’s Talk About Fixed Effects: Let’s Talk About All the Good Things and the Bad Things.” <em>Köln Z Soziol</em> 72: 289–299.</p></li>
+<li><p>Nathaniel Beck and Jonathan N.&nbsp;Katz. 2011. “Modeling Dynamics in Time-Series-Cross-Section Political Economy Data.” <em>Annual Review of Political Science</em> 14: 331–52.</p></li>
+<li><p>Hanson, Jonathan K. 2015. “Democracy and State Capacity: Complements or Substitutes?” <em>Studies in Comparative International Development</em> 50: 304-330.</p></li>
+</ul>
+<div class="center">
+<p><strong>Causal Inference for Time-Series and Panel Data</strong></p>
 </div>
-<div id="ref-posit_ide_version_control" class="csl-entry" role="listitem">
-Posit. 2026. <em>Version Control</em>. <a href="https://docs.posit.co/ide/user/ide/guide/tools/version-control.html" class="uri">Https://docs.posit.co/ide/user/ide/guide/tools/version-control.html</a>.
-</div>
-<div id="ref-quarto_github_pages" class="csl-entry" role="listitem">
-Quarto. 2026a. <em>GitHub Pages</em>. <a href="https://quarto.org/docs/publishing/github-pages.html" class="uri">Https://quarto.org/docs/publishing/github-pages.html</a>.
-</div>
-<div id="ref-quarto_html_accessibility" class="csl-entry" role="listitem">
-Quarto. 2026b. <em>HTML Accessibility</em>. <a href="https://quarto.org/docs/output-formats/html-accessibility.html" class="uri">Https://quarto.org/docs/output-formats/html-accessibility.html</a>.
-</div>
-<div id="ref-quarto_html_themes" class="csl-entry" role="listitem">
-Quarto. 2026c. <em>HTML Themes</em>. <a href="https://quarto.org/docs/output-formats/html-themes.html" class="uri">Https://quarto.org/docs/output-formats/html-themes.html</a>.
-</div>
-<div id="ref-quarto_revealjs" class="csl-entry" role="listitem">
-Quarto. 2026d. <em>Revealjs</em>. <a href="https://quarto.org/docs/presentations/revealjs/" class="uri">Https://quarto.org/docs/presentations/revealjs/</a>.
-</div>
-<div id="ref-quarto" class="csl-entry" role="listitem">
-Quarto. 2026e. <em>Welcome to Quarto</em>. <a href="https://quarto.org/" class="uri">Https://quarto.org/</a>.
-</div>
-</div>
+</section>
+<section id="november-10-12-17-19-difference-in-differences-models" class="level2">
+<h2 class="anchored" data-anchor-id="november-10-12-17-19-difference-in-differences-models">November 10, 12, 17 &amp; 19: Difference-in-Differences Models</h2>
+<p>Difference-in-difference models are useful when: 1) we have observations of each of the members of the sample for at least two periods in time; and, 2) one group within the sample experienced the treatment during the time frame under study, while the other did not. We thus can observe whether group-level differences in the outcome of interest changed from one period to the next, facilitating an estimate of the treatment effect.</p>
+<p><em>General overviews</em></p>
+<ul>
+<li><p>Dmitry Arkhangelsky and Guido Imbens. 2024. “Causal models for longitudinal and panel data: a survey.” <em>Econometrics Journal</em> 27: C1–C61. This is a thorough review. Very good but more challenging read.</p></li>
+<li><p>Yiqing Xu. 2023. “Causal Inference with Time-Series Cross-Sectional Data: A Reflection.” In <em>The Oxford Handbook of Engaged Methodological Pluralism in Political Science</em>, Box-Steffensmeier et al., eds.&nbsp;Oxford University Press. Another overview that is a bit more accessible.</p></li>
+</ul>
+<p><em>Basic DiD models</em></p>
+<ul>
+<li><p>Scott Cunningham. 2021. “Difference-in-Differences.” <em>Causal Inference: The Mixtape</em>, chapter 9. <a href="https://mixtape.scunning.com/09-difference_in_differences" class="uri">https://mixtape.scunning.com/09-difference_in_differences</a>.</p></li>
+<li><p>Clément de Chaisemartin and Xavier D’Haultfœuille. June 2025. <em>Credible Answers to Hard Questions: Differences-in-Differences for Natural Experiments</em>. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4487202">Textbook in progress</a>.</p></li>
+<li><p>Apoorva Lal. 2025. “When can we get away with using the two-way fixed effects regression?” Manuscript.</p></li>
+</ul>
+<p><em>Recent approaches/innovations</em></p>
+<ul>
+<li><p>Guangyi Wang, Rita Hamad, and Justin S. White. 2024. “Advances in Differences-in-differences Methods for Policy Evaluation Research.” <em>Epidemiology</em> 35(5): 628–637.</p></li>
+<li><p>Jonathan Roth, Pedro H. C. Sant’Anna, Alyssa Bilinski, and John Poe. 2023. “What’s Trending in Difference-in-Differences? A Synthesis of the Recent Econometrics Literature.” <em>Journal of Econometrics</em> 235: 2218–2244. This is an overview.</p></li>
+<li><p>Brantly Callaway and Pedro H.C. Sant’Anna. 2021. “Difference-in-Differences with Multiple Time Periods.” <em>Journal of Econometrics</em> 225: 200–230.</p></li>
+<li><p>Liyang Sun and Sarah Abraham. 2021. “Estimating Dynamic Treatment Effects in Event Studies with Heterogeneous Treatment Effects.” <em>Journal of Econometrics</em>, 225: 175–199.</p></li>
+<li><p>Arindrajit Dube, Daniele Giradi, Òscar Jordà, and Alan M. Taylor. 2025. “A Local Projections Approach to Difference-in-Differences.” <em>Journal of Applied Econometrics</em>, 0:1–18.</p></li>
+<li><p>Licheng Liu, Ye Wang, and Yiqing Xu. 2022. “A Practical Guide to Counterfactual Estimators for Causal Inference with Time-Series Cross-Sectional Data.” <em>American Journal of Political Science</em>.</p></li>
+<li><p>Amanda Weiss. 2024. “How Much Should We Trust Modern Difference-in-Differences Estimates?” Working Paper.</p></li>
+</ul>
+<p><em>Examples from the literature and tutorials</em></p>
+<ul>
+<li><p>Janet Currie and Reed Walker. 2011. “Traffic Congestion and Infant Health: Evidence from E-ZPass.” <em>American Economic Journal: Applied Economics</em> 3(1): 65-90.</p></li>
+<li><p>Andrew Goodman-Bacon. 2018. “Public Insurance and Mortality: Evidence from Medicaid Implementation.” <em>Journal of Political Economy</em> 126(1): 216–262.</p></li>
+<li><p>Ziyi Liu and Yiqing Xu. 2025. “New DID Methods,” chapter 5, <em>fect - User Manual</em>. <a href="https://yiqingxu.org/packages/fect/05-panel.html" class="uri">https://yiqingxu.org/packages/fect/05-panel.html</a>. This is a very helpful guided implementation of various DiD estimation methods using R.</p></li>
+</ul>
+</section>
+<section id="november-24-december-1-interrupted-time-series-with" class="level2">
+<h2 class="anchored" data-anchor-id="november-24-december-1-interrupted-time-series-with">November 24 &amp; December 1: Interrupted Time Series With</h2>
+<p>cross-sectional data, we used regression discontinuity models to make a causal inference around a cutoff point on an observable characteristic. With time-series data, that cutoff point can be a point in time, such as the date of a policy implementation. Comparison cases facilitate the identification of shifts in levels and trends of the outcome variable.</p>
+<ul>
+<li><p>Youseop Shin. 2017. “Time Series Analysis as an Impact Analysis Method.” In <em>Time Series Analysis in the Social Sciences: The Fundamentals</em>, chap.&nbsp;7. University of California Press.</p></li>
+<li><p>Kelly Hallberg, Ryan Williams, Andrew Swanlund, and Jared Eno. 2018. “Short Comparative Interrupted Time Series using Aggregate School-level Data in Education Research.” <em>Educational Researcher</em> 47(5): 295–306.</p></li>
+<li><p>Catherine Hausman and David S. Rapson. 2018. “Regression Discontinuity in Time: Considerations for Empirical Applications.” <em>Annual Review of Resource Economics</em> 10(21): 1–20.</p></li>
+<li><p>Kosuke Imai, In Song Kim, and Erik H. Wang. 2021. “Matching Methods for Causal Inference with Time-Series Cross Sectional Data.” <em>American Journal of Political Science</em>, Published Online.</p></li>
+<li><p>Hinda Ruton et al.&nbsp;2018. “The Impact of an mHealth Monitoring System on Health Care Utilization by Mothers and Children: An Evaluation Using Routine Health Information in Rwanda.” <em>Health Policy and Planning</em> 33: 920–927.</p></li>
+<li><p>David K. Humphreys, Antonio Gasparrini, and Douglas J. Wiebe. 2017. “Evaluating the Impact of Florida’s ‘Stand Your Ground’ Self-defense Law on Homicide and Suicide by Firearm: An Interrupted Time Series Study.” <em>JAMA Internal Medicine</em> 177(1): 44–50.</p></li>
+</ul>
+</section>
+<section id="december-3-8-synthetic-control-method" class="level2">
+<h2 class="anchored" data-anchor-id="december-3-8-synthetic-control-method">December 3 &amp; 8: Synthetic Control Method</h2>
+<p>This method builds upon matching methods by creating a “synthetic” comparison case out of a pool of possible cases. Ideally, we would be able to compare a case that has undergone some treatment to the counterfactual scenario in which it had not undergone the treatment. Since this counterfactual scenario does not exist, we construct one using a weighted average of similar cases that did not undergo the treatment. We then can compare the observed outcomes against those predicted by under the counterfactual.</p>
+<ul>
+<li><p>Alberto Abadie. 2021. “Using Synthetic Controls: Feasibility, Data Requirements, and Methodological Aspects.” <em>Journal of Economic Literature</em> 59(2): 391-425.</p></li>
+<li><p>Robert McClelland and Livia Mucciolo. 2022. “An Update on the Synthetic Control Method as a Tool to Understand State Policy.” Tax Policy Center. Urban Institute &amp; Brookings Institution.</p></li>
+<li><p>John Springford. 2018. “The Cost of Brexit to June 2018.” Center for European Reform Insight, September 30, 2018.</p></li>
+<li><p>Thales A. P. West, Sven Wunder, Erin O. Sills, Jan Börner, Sami W. Rifai, Alexandra N. Neidermeier, Gabriel P. Frey, and Andreas Kontole. “Action needed to make carbon offsets from forest conservation work for climate change mitigation.” <em>Science</em> 381(6660): 873–877.</p></li>
+<li><p>Yuan-Ying Chi, Yuan-Yuan Wang, and Jin-Hua Xu. 2021. “Estimating the impact of the license plate quota policy for ICEVs on new energy vehicle adoption by using synthetic control method.” <em>Energy Policy</em> 149: 1–13.</p></li>
+</ul>
+</section>
+<section id="take-home-final-exam-due-by-monday-december-17" class="level2">
+<h2 class="anchored" data-anchor-id="take-home-final-exam-due-by-monday-december-17">Take-home Final Exam due by Monday, December 17</h2>
 
 
 </section>
 
 </main> <!-- /main -->
-<script>
-  // If you have multiple navbars (e.g., main + sidebar), label uniquely:
-  const navbars = document.querySelectorAll('nav.navbar');
-  navbars.forEach((nav, idx) => {
-    nav.setAttribute('aria-label', idx === 0 ? 'Main site navigation' : `Secondary navigation`);
-  });
-  const sidebar = document.getElementById('quarto-sidebar');
-  if (sidebar && sidebar.tagName === 'NAV') {
-    sidebar.setAttribute('aria-label', 'Sidebar navigation');
-  }
-  // If your sidebar is a div with role="navigation"
-  else if (sidebar && sidebar.getAttribute('role') === 'navigation') {
-    sidebar.setAttribute('aria-label', 'Sidebar navigation');
-  }
-  // Add tabindex=0 to scrollable <pre> elements
-  document.querySelectorAll('pre').forEach(function(pre) {
-    if (pre.scrollWidth > pre.clientWidth) {
-      pre.setAttribute('tabindex', '0');
-      pre.setAttribute('aria-label', 'Code sample');
-    }
-  });
-  document.querySelectorAll('.callout-header.collapsed').forEach(function(header) {
-  if (!header.hasAttribute('role')) {
-    header.setAttribute('role', 'button');
-    header.setAttribute('tabindex', '0');
-  }});
-</script>
-
-
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
