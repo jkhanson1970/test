@@ -2,12 +2,6 @@
   {
     "listing": "/slides/index.html",
     "items": [
-      "/slides/access.html",
-      "/slides/backgrounds.html",
-      "/slides/day1.html",
-      "/slides/ghpages.html",
-      "/slides/pandoc.html",
-      "/slides/style.html",
       "/slides/DichotomousDVs_exp.html"
     ]
   }
