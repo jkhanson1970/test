@@ -211,7 +211,7 @@ the number of times something occurs.
 
 :::: samepage
 ::: center
-# Causal Inference for Cross-Sectional Data**
+# Causal Inference for Cross-Sectional Data
 :::
 
 ## September 22 & 24: Sample Selection and Related Models
