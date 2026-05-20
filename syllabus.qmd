@@ -105,7 +105,7 @@ consult any textbook or static internet-resources.
 
 
 ::: center
-**Advanced Estimation Methods for Cross-Sectional Data**
+# Advanced Estimation Methods for Cross-Sectional Data
 :::
 
 ## August 25: Principles of Maximum Likelihood Estimation 
@@ -211,7 +211,7 @@ the number of times something occurs.
 
 :::: samepage
 ::: center
-**Causal Inference for Cross-Sectional Data**
+# Causal Inference for Cross-Sectional Data**
 :::
 
 ## September 22 & 24: Sample Selection and Related Models
@@ -341,7 +341,7 @@ relationship.
   <https://tinyurl.com/y5ee3j86>.
 
 ::: center
-**Estimation Methods for Time-Series and Panel Data**
+# Estimation Methods for Time-Series and Panel Data
 :::
 
 ## October 20 & 22: Regression with Time-Series Data
@@ -423,7 +423,7 @@ space.
   50: 304-330.
 
 ::: center
-**Causal Inference for Time-Series and Panel Data**
+# Causal Inference for Time-Series and Panel Data
 :::
 
 ## November 10, 12, 17 & 19: Difference-in-Differences Models
