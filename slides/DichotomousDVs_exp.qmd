@@ -144,7 +144,7 @@ Actually, we could just use OLS despite a dichotomous $y$.
 $$\begin{align*}
 \mathop{\mathrm{E}}[y_i|\mathbf{x_i}] & = [1 \times \mathop{\mathrm{Pr}}(y_i = 1|\mathbf{x_i})] + [0 \times \mathop{\mathrm{Pr}}(y_i = 0)|\mathbf{x_i}]\\
 &  = \mathop{\mathrm{Pr}}(y_i = 1|\mathbf{x_i})
-\end{align*}$$
+\end{align*}$${alt="the expected value of y given x is equal to 1 times the probability that y equals 1 given x plus 0 times the probability that y equals 0 given x, which simplifies to just the probability that y equals 1 given x"}
 
 We can rewrite the expected value of $y_i$ given $\mathbf{x_i}$ as: 
 
