@@ -31,8 +31,9 @@ received a grade lower than A- in either of these courses.
 Unless otherwise noted, lectures are Mondays and Wednesdays from
 10:00--11:20 pm in 1210 Weill Hall.
 
-## Textbooks There is no single textbook for this course, and
-readings will be available on the Canvas website. You can log into
+## Textbooks
+
+There is no single textbook for this course, and readings will be available on the Canvas website. You can log into
 Canvas at <http://canvas.umich.edu>. The following books and articles,
 however, will be good references for course material. The Cunningham and
 Huntington-Klein texts are available in an online format.
@@ -107,8 +108,9 @@ consult any textbook or static internet-resources.
 **Advanced Estimation Methods for Cross-Sectional Data**
 :::
 
-## August 25: Principles of Maximum Likelihood Estimation In
-the classical linear regression model and its variants, we find the
+## August 25: Principles of Maximum Likelihood Estimation 
+
+In the classical linear regression model and its variants, we find the
 parameters of interest (i.e. the regression coefficients) though
 analytic formulas. With Maximum Likelihood Estimation (MLE), these
 parameters are often found by a search algorithm which tours the
@@ -310,8 +312,9 @@ models.
 
 ## October 13: Fall Study Break
 
-## October 15: Instrumental Variables Analysis Oftentimes,
-there is strong reason to believe that the relationship between our
+## October 15: Instrumental Variables Analysis
+
+Oftentimes, there is strong reason to believe that the relationship between our
 dependent variable, and one or more of our independent variables, is
 endogenous. In such cases, our estimate of the coefficient on the
 independent variable will be biased. If we can find a third variable,
@@ -341,8 +344,9 @@ relationship.
 **Estimation Methods for Time-Series and Panel Data**
 :::
 
-## October 20 & 22: Regression with Time-Series Data The
-standard assumption is that our data are independent and identically
+## October 20 & 22: Regression with Time-Series Data
+
+The standard assumption is that our data are independent and identically
 distributed. When we have time-series data, such as the results of
 monthly polls on presidential approval or some other case of repeated
 observations of the same object, this assumption is violated. The
@@ -387,8 +391,9 @@ use of multi-level models for this purpose.
   individual, household, and community factors influencing child growth
   in Nepal." *BMC Pediatrics* 19(91): 1--14.
 
-## October 29 and November 3 & 5: Regression with Panel Data We
-have a panel when our data contain repeated observations of a sample of
+## October 29 and November 3 & 5: Regression with Panel Data
+
+We have a panel when our data contain repeated observations of a sample of
 objects, such as a set of individuals who are surveyed periodically or a
 time series of cross-national data. In this scenario, we need to think
 about the non-independence of our observations both across time and
